@@ -4,6 +4,7 @@
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <title>Ismerkedés a JavaScript</title>
+    <link rel='stylesheet' href='./stilus.css' />
     <!-- <script src='./gyak.js'></script> -->
 </head>
 <body>
@@ -13,13 +14,57 @@
         <input type="button" value='Változtatás' onclick='valtoztat()' />        
         <p id='pelda'></p>
     </div> -->
-    <div>
+    <!-- <div>
         <p>Piros értéke: <input type='text' id='piros' ></p>
         <p>Zöld értéke: <input type='text' id='zold' ></p>
         <p>Kék értéke: <input type='text' id='kek' ></p>
         <input type="button" value='Változtatás' onclick='valtoztat()' />
+    </div> -->
+    <!-- <div>
+        <p>Első érték: <input type='text' id='elso' ></p>
+        <p>Második érték: <input type='text' id='masodik' ></p>
+        <p>Számított érték: <input type='text' id='eredmeny' ></p>
+        <input type="button" value='+' onclick='osszead()' />
+        <input type="button" value='-' onclick='kivon()' />
+        <input type="button" value='*' onclick='szoroz()' />
+        <input type="button" value='/' onclick='oszt()' />
+    </div> -->
+    <div class='szamolo'>
+        <table>
+            <tr>
+                <td colspan='4' style='height:20px;'></td>
+            </tr>
+            <tr>
+                <td><input type='button' value='+/-' id='pm'></td>
+                <td><input type='button' value='/' id='oszt'></td>
+                <td><input type='button' value='*' id='szor'></td>
+                <td><input type='button' value='-' id='kiv'></td>
+            </tr>
+            <tr>
+                <td><input type='button' value='7' id='het'></td>
+                <td><input type='button' value='8' id='nyolc'></td>
+                <td><input type='button' value='9' id='kilenc'></td>
+                <td rowspan='2'><input type='button' value='+' id='osszead' style='height:50px;'></td>
+            </tr>
+            <tr>
+                <td><input type='button' value='4' id='negy'></td>
+                <td><input type='button' value='5' id='ot'></td>
+                <td><input type='button' value='6' id='hat'></td>
+            </tr>
+            <tr>
+                <td><input type='button' value='1' id='egy'></td>
+                <td><input type='button' value='2' id='ketto'></td>
+                <td><input type='button' value='3' id='harom'></td>
+                <td rowspan='2'><input type='button' value='Enter' id='enter' style='height:50px;' /></td>
+            </tr>
+            <tr>
+                <td colspan='2'><input type='button' value='0' id='nulla' style='width:50px;' /></td>
+                <td><input type='button' value='.' id='pont'></td>
+            </tr>
+        </table>
     </div>
     <!-- <script src='./gyak.js'></script> -->
-    <script src='./beallitas.js'></script>
+    <!-- <script src='./beallitas.js'></script> -->
+    <script src='./szamologep.js'></script>
 </body>
 </html>

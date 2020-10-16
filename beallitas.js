@@ -16,9 +16,9 @@ function valtoztat() {
 */
 
 function valtoztat() {
-    let piros = document.getElementById('piros').value;
-    let zold = document.getElementById('zold').value;
-    let kek = document.getElementById('kek').value;
+    let piros = +document.getElementById('piros').value;
+    let zold = +document.getElementById('zold').value;
+    let kek = +document.getElementById('kek').value;
 
     let kever = (
         (0 <= piros && piros <= 255) &&
